@@ -6,7 +6,7 @@ export default function Blogs (post: Post) {
     <main>
       {post.eyecatch && <Image src={post.eyecatch.url} alt="eyecatch" width={post.eyecatch.width} height={post.eyecatch.height} />}
       <article id={post.id}>
-        <h1>{post.title}</h1>
+        <h1 className="text-4xl font-bold underline">{post.title}</h1>
         <div dangerouslySetInnerHTML={{
               __html: post.content,
             }}
